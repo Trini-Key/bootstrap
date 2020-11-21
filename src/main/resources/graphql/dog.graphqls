@@ -7,8 +7,8 @@ type Dog {
 
 type Query {
     findAllDogs: [Dog]!
-    findAllBreed: breed: String!
-    findAllName: name: String!
+    findAllBreed: (breed: String!)
+    findAllName: (name: String!)
     findBreedById: (id: ID!) : Dog!
 }
 

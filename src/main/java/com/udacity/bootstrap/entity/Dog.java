@@ -38,19 +38,19 @@ public class Dog {
 
     public Dog(){}
 
-    public Long getId(Long id){
+    public Long getId(){
         return id;
     }
 
-    public String getName(String name){
+    public String getName(){
         return name;
     }
 
-    public String getBreed(String breed){
+    public String getBreed(){
         return breed;
     }
 
-    public String getOrigin(String origin){
+    public String getOrigin(){
         return origin;
     }
 
@@ -58,15 +58,15 @@ public class Dog {
         this.id = id;
     }
 
-    public void setName(){
+    public void setName(String name){
         this.name = name;
     }
 
-    public void setBreed(){
+    public void setBreed(String breed){
         this.breed = breed;
     }
 
-    public void setOrigin(){
+    public void setOrigin(String origin){
         this.origin = origin;
     }
 }
