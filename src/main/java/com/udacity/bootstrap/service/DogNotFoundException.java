@@ -13,6 +13,8 @@ public class DogNotFoundException  extends RuntimeException implements GraphQLEr
 
     private Map<String, Object> extensions = new HashMap<>();
 
+    public DogNotFoundException(){}
+
     public DogNotFoundException(String message, Long invalidDogId){
         super(message);
         extensions.put("invalidDogId", invalidDogId);
