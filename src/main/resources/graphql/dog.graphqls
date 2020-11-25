@@ -7,9 +7,7 @@ type Dog {
 
 type Query {
     findAllDogs: [Dog]!
-    findAllBreed(breed: String!) :Dog!
-    findAllName(name: String!): Dog!
-    findBreedById(id: ID!) : Dog!
+
 }
 
 type Mutation {

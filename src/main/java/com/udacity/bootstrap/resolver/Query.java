@@ -4,10 +4,9 @@ import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.udacity.bootstrap.entity.Dog;
 import com.udacity.bootstrap.repository.DogRepository;
 import com.udacity.bootstrap.service.DogNotFoundException;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Component;
 
-import java.util.*;
+import java.util.Optional;
 
 @Component
 public class Query implements GraphQLQueryResolver {
@@ -17,7 +16,7 @@ public class Query implements GraphQLQueryResolver {
         this.dogRepository = dogRepository;
     }
 
-    public Iterable<Dog> findAllDog(){
+    public Iterable<Dog> findAllDogs(){
         return dogRepository.findAll();
     }
 
@@ -29,4 +28,6 @@ public class Query implements GraphQLQueryResolver {
             throw new DogNotFoundException("Dog not found", id);
         }
     }
+
+
 }

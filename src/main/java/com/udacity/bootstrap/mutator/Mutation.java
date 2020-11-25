@@ -17,8 +17,8 @@ public class Mutation implements GraphQLMutationResolver {
         this.dogRepository = dogRepository;
     }
 
-    public Dog newDog(String name, String breed){
-        Dog dog = new Dog(name, breed);
+    public Dog newDog(String name, String breed, String origin){
+        Dog dog = new Dog(name, breed, origin);
         dogRepository.save(dog);
         return dog;
     }
