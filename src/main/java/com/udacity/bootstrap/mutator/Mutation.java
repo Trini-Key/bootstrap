@@ -3,6 +3,7 @@ package com.udacity.bootstrap.mutator;
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import com.udacity.bootstrap.entity.Dog;
 import com.udacity.bootstrap.repository.DogRepository;
+import com.udacity.bootstrap.service.BreedNotFoundException;
 import com.udacity.bootstrap.service.DogNotFoundException;
 import org.springframework.stereotype.Component;
 
