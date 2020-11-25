@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface DogRepository extends CrudRepository<Dog, Long> {
 
-
+/*
     @Query("select d.id, d.breed from Dog d where d.id=:id")
     String findBreedById(Long id);
 
@@ -20,5 +20,6 @@ public interface DogRepository extends CrudRepository<Dog, Long> {
 
     @Query("select d.id, d.origin from Dog d")
     List<String> findAllOrigin();
+*/
 
 }
